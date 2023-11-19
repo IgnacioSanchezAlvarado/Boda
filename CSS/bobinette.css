@@ -1,0 +1,171 @@
+/*----CSS de prueba -------*/
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  
+  /* Separate rule for compatibility, :focus-within is required on modern Firefox and Chrome */
+  input.visually-hidden:focus + label {
+     outline: thin dotted;
+   }
+   input.visually-hidden:focus-within + label {
+     outline: thin dotted;
+   }
+  /*------ fin CSS de prueba ------------*/
+  
+  
+  
+  
+  /*
+        VARIOS
+  */
+  /* ---------------- nav ----------------------- */
+  /* .pillsline .nav-item{
+     border: 1px solid #4db6b9;
+     border-radius: .25rem;
+  }
+  .pillsline .nav-item.d-flex {
+     margin-left: 15px;
+     margin-bottom: 5px;
+  } */
+  
+  /* ----------- Cabeceras ---------------------- */
+  
+  /* ------------- Error ------------------------ */
+  .error h1.caja{
+     font-size: 45px;
+  }
+  .error .error_msg{
+     font-size: 20px !important;
+     color: #dc3545;
+     text-align: center;
+  }
+  /* ------------ botones ----------------------- */
+  .btn-accion, .btn-meinteresa{
+     padding: 4px 15px 4px 15px;
+  }
+  /* ------------ botones bloques --------------- */
+  
+  .btn-bobi-verde {
+     background-color: #4db6b1;
+     color:  #fff;
+  }
+  .btn-bobi-gris {
+     background-color: #6c757d;
+     color:  #fff;
+  }
+  .blq-evento, .blq-evento > .card-header, .blq-evento > .card-footer{
+     background-color: #eff0f1;
+  }
+  .blq-evento, .blq-evento > .card-header {
+     padding: 0;
+  }
+  
+  #blqModal #btnOpc{
+     background-color: #eff0f1;
+  }
+  #blqModal #btnOpc:hover{
+     background-color: #6c757d;
+  }
+  /* ---------------- portada -------------- */
+  
+  .container-portada {
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center top;
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  /* Background image is fixed in the viewport so that it doesn't move when
+     the content's height is greater than the image's height */
+  /*background-attachment: fixed;*/
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #fff;
+  }
+  .contenedor-fondo-blanco {
+     margin-top: 30px;
+     /*margin-bottom: 50px;*/
+     padding-top: 25px;
+     padding-bottom: 25px;
+  }
+  /* -------------- fondo de portadas ---------- */
+  .formulario-contacto {
+     padding-bottom: 20px;
+  }
+  /*
+        TABLAS DATATABLES
+  */
+  /* ------------ General -------------------*/
+  
+  .sorting_disabled {
+      border: 0 !important;
+  }
+  
+  .table tbody td {
+        /*padding: 0.5rem 0 0 0.5rem !important;*/
+        vertical-align: middle;
+  }
+  td.details-control {
+        position: relative;
+        text-align: center !important;
+        color: #4db6b9;
+  }
+  td.details-control:before {
+        /*background: url('/img/iconos/details_open.png') no-repeat center center;
+        cursor: pointer;
+        content: '\f06e';*/
+        display: inline-block;
+        /*font-family: FontAwesome;*/
+        font-size: 20px;
+  }
+  tr.shown td.details-control:before {
+        /*content: '\f070';/*
+        display: inline-block;
+        /*font-family: FontAwesome;*/
+        font-size: 20px;
+        /*background: url('/img/iconos/details_close.png') no-repeat center center;*/
+  }
+  /* ------ Preguntas y respuestas ----------*/
+  #pyr th {
+     display: none;
+  }
+  #pyr td {
+     vertical-align: middle;
+     font-size: 16px;
+     padding: 0.8rem !important;
+  }
+  .pyr-td {
+     background-color: #4db6b9;
+     color: white;
+  }
+  #pyr_length,
+  #pyr_info .table-striped tbody tr:nth-of-type(2n+1) {
+     background-color: #eaf8f4;
+     border-top-width: 4px;
+     border-bottom-width: 4px;
+  }
+  #pyr_filter,
+  #pyr_paginate {
+     float: right;
+  }
+  #pyr_filter input {
+     height: 39px;
+  }
+  #pyr button {
+     color: #4db6b9;
+     font-size: 25px;
+     padding: 3px 6px;
+     background-color: transparent;
+  }
+  /* ------ Lista de invitados --------------- */
+  table[id^="acomp"] > thead > tr.tr-acomp {
+     color:#6c757d !important;
+  }
+  
+  a {
+      cursor: pointer;
+  }

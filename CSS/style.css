@@ -1,0 +1,867 @@
+.btn-meInteresa {
+    color: white !important;
+ }
+ .btn-meInteresa:hover {
+    color: #6c757d !important;
+ }
+ 
+ /* Switch de voy/no voy en el modal */
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 30px;
+ }
+ 
+ .switch input {
+    display: none;
+ }
+ 
+ .slider {
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+    top: 0;
+    left: 1px;
+    right: 0;
+    bottom: 1px;
+    background-color: #f2f2f2;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+ }
+ 
+ .slider:before {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+    /*background-color: rgb(38, 90, 88);*/
+    -webkit-box-shadow: 0 2px 5px rgba(38, 90, 88, 0.22);
+    box-shadow: 0 2px 5px rgba(38, 90, 88, 0.22);
+    -webkit-transition: 0.4s;
+    transition: all 0.4s ease-in-out;
+ }
+ .slider:after {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    content: 'Si voy';
+    font-size: 20px;
+    text-align: left !important;
+    line-height: 25px;
+    padding-top: 2px;
+    padding-left: 10px;
+    width: 250px;
+    color: #fff;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #4db6b1;
+    -webkit-transform: translateX(-220px);
+    -ms-transform: translateX(-220px);
+    transform: translateX(-220px);
+    transition: all 0.4s ease-in-out;
+ }
+ 
+ input:checked + .slider:after {
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px);
+    /*width: 235px;*/
+    padding-left: 25px;
+ }
+ 
+ input:checked + .slider:before {
+    background-color: #fff;
+ }
+ 
+ input:checked + .slider:before {
+    -webkit-transform: translateX(220px);
+    -ms-transform: translateX(220px);
+    transform: translateX(220px);
+ }
+ 
+ /* Rounded sliders */
+ .slider.round {
+    border-radius: 30px;
+ }
+ .slider.round:before {
+    border-radius: 50%;
+ }
+ .absolute-no {
+    position: absolute;
+    left: 0;
+    color: darkslategrey;
+    text-align: right !important;
+    font-size: 20px;
+    width: calc(100% - 10px);
+    height: 30px;
+    line-height: 25px;
+    cursor: pointer;
+ }
+ /* fin Switch */
+ select.form-control-lg {
+    padding-left: 12px; /* esta ligada al valor de "padding" en form-control-lg"*/
+ }
+ /* Fin añadido CPL */
+ 
+ /*
+ .container {
+    width: 100%;
+    margin: 75px auto 75px auto !important;
+ }
+ */
+ .container-tarifas {
+    margin: auto auto 75px auto;
+ }
+ 
+ .carousel-item.active,
+ .carousel-item-next,
+ .carousel-item-prev {
+    display: block;
+ }
+ 
+ .cont-sup {
+    background-color: #f8f9fa;
+    max-width: 100% !important;
+    margin: 0px !important;
+ }
+ 
+ 
+ hr.servicios {
+    color: #437977;
+    width: 90%;
+ }
+ 
+ h1.normal {
+    font-size: 70px;
+    letter-spacing: 2px;
+ }
+ 
+ 
+ .parrafo-info {
+    text-align: justify;
+ }
+ 
+ 
+ .contacto-sup {
+    text-align: center;
+    padding: 5px;
+ }
+ 
+ .enlace-contacto-sup {
+    color: #6c757d;
+    font-size: 12px;
+ }
+ 
+ .contacto-sup > a > img {
+    margin-right: 5px;
+ }
+ .contacto-sup:hover {
+    color: #4db6b1 !important;
+ }
+ 
+ .navbar-brand {
+    margin-left: 15px;
+ }
+ 
+ 
+ 
+ .btn-acceso {
+    background-color: #4db6b1;
+    color: white;
+    padding: 5px 15px 5px 15px;
+ }
+ 
+ .btn-acceso:hover {
+    color: #4db6b1;
+    background-color: white;
+    border: 1px solid #4db6b1;
+ }
+ .contenedor-fondo {
+    background-color: #eff0f1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+ }
+ 
+ .contenedor-como-funciona {
+    background-color: #eff0f1;
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+ }
+ /*
+ .contenedor-fondo-blanco {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+ }
+ */
+ /* Portada secciones */
+ 
+ 
+ 
+ /*
+ .subtitulo {
+    font-size: 32px !important;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+ }
+ */
+ 
+ 
+ /*Párrafos textos*/
+ 
+ .nota {
+    /*margin-right: auto;
+    margin-left: auto;
+    width: 80%;*/
+    color: #6c757d;
+    font-size: 20px;
+ }
+ 
+ .nota > img {
+    margin-right: 10px;
+    margin-left: 10px;
+ }
+ 
+ /*Tarjeta*/
+ .tarjeta {
+    margin: auto;
+    width: 70%;
+ }
+ 
+ .tarjeta-item {
+    padding: 15px;
+ }
+ 
+ .icono-centrado {
+    display: flex;
+    margin: 0 auto;
+ }
+ .tarjeta-titulo {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 24px;
+ }
+ 
+ .tarjeta-parrafo {
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+ }
+ 
+ .boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 75px;
+ }
+ 
+ .boton2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+ }
+ 
+ .btn-accion {
+    background-color: #4db6b1;
+    color: white;
+    padding: 15px 15px 15px 15px;
+ }
+ 
+ .btn-accion:hover {
+    color: #4db6b1;
+    background-color: white;
+    border: 1px solid #4db6b1;
+ }
+ 
+ /*Servicios*/
+ .tarjeta-servicios {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 25px;
+    font-size: 42px;
+    color: #4db6b1;
+ }
+ 
+ .tarjeta-servicios-parrafo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    text-align: justify;
+ }
+ 
+ .fila-servicios {
+    border: 1px solid #545b6236;
+    margin-bottom: 30px;
+    background-color: #eff0f1;
+ }
+ 
+ .contenedor-servicios {
+    background-color: #eff0f1;
+    padding: 0px;
+ }
+ 
+ .contenedor-servicios-info {
+    background-color: #eff0f1;
+    padding-left: 25px;
+    padding-right: 25px;
+ }
+ 
+ .fila-ver-mas {
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+ }
+ 
+ .btn-servicios {
+    z-index: 0;
+    background-color: #4db6b1;
+    color: white;
+ }
+ 
+ .btn-servicios:hover {
+    color: #4db6b1;
+    background-color: white;
+    border: 1px solid #4db6b1;
+ }
+ 
+ .tarjeta-subtitulo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #4db6b1;
+ }
+ 
+ /*Lista servicios incluidos*/
+ .tarjeta-lista {
+    margin: auto;
+    width: 70%;
+ }
+ 
+ .tarjeta-lista-items {
+    color: #6c757d;
+    font-size: 18px;
+    list-style: none;
+    padding: 0px;
+ }
+ 
+ .tarjeta-lista-items > li {
+    background: url('../img/iconos/lista.png') left center no-repeat;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+ }
+ 
+ /*Pasos como funciona*/
+ .tarjeta-lista-pasos {
+    margin: auto;
+ }
+ 
+ .tarjeta-pasos {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 25px;
+ }
+ 
+ /*Galería*/
+ .galeria-item {
+    border-radius: 10px;
+ }
+ 
+ /* The Modal (background) */
+ .modal-img {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+ }
+ 
+ /* Modal Content (image) */
+ .modal-img-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+ }
+ 
+ /* Caption of Modal Image */
+ #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+ }
+ 
+ /* Add Animation */
+ .modal-img-content,
+ #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+ }
+ 
+ @keyframes zoom {
+    from {
+       transform: scale(0.1);
+    }
+    to {
+       transform: scale(1);
+    }
+ }
+ 
+ 
+ 
+ /* 100% Image Width on Smaller Screens */
+ @media only screen and (max-width: 700px) {
+    .modal-img-content {
+       width: 100%;
+    }
+ }
+ 
+ /*Botón ir arriba*/
+ .ir-arriba {
+    display: none;
+    padding: 15px;
+    background: #4db6b1;
+    font-size: 10px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 50%;
+    z-index: 100;
+ }
+ 
+ 
+ 
+ /*Formulario contacto*/
+ 
+ .formulario-contacto {
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 75px;
+    padding-bottom: 10px;
+ }
+ 
+ .formulario-contacto-boton {
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+ }
+ 
+ 
+ select {
+    color: #6c757d;
+ }
+ 
+ .btn-formulario:hover {
+    color: #4db6b1;
+    background-color: white;
+    border: 1px solid #4db6b1;
+ }
+ 
+ .btn-formulario {
+    margin: auto;
+    background-color: #4db6b1;
+    color: white;
+ }
+ 
+ 
+ /*Formulario login*/
+ .container-login {
+    margin: auto;
+    max-width: 90% !important;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+ }
+ 
+ .login {
+    background: url('../img/fondo-login.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 40px;
+    padding-bottom: 40px;
+ }
+ /*
+ .login-caja {
+    background-color: rgba(214, 214, 214, 0.7);
+    border-radius: 8px;
+ }
+ */
+ .formulario-contacto {
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 75px;
+    padding-bottom: 0;
+    text-align: center;
+ }
+ 
+ .enlaces-login {
+    font-size: 12px;
+    color: #6c757d;
+    margin-bottom: 25px !important;
+ }
+ 
+ .enlaces-login:hover {
+    color: #4db6b1;
+    text-decoration: none;
+ }
+ 
+ /*Formulario registro*/
+ .formulario-registro {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 75px;
+    padding-bottom: 10px;
+    text-align: center;
+ }
+ 
+ .form-registro {
+    background-color: #eff0f1;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+ }
+ 
+ /*Me interesa*/
+ 
+ .btn-meInteresa {
+    margin: auto;
+    background-color: #6c757d;
+    color: white;
+    margin-top: 10px;
+ }
+ 
+ .btn-meInteresa:hover {
+    color: #6c757d;
+    background-color: white;
+    border: 1px solid #6c757d;
+ }
+ 
+ .formulario-meInteresa-boton {
+    padding-left: 15%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+ }
+ 
+ .boton-meInteresa {
+    text-align: right;
+    margin-top: 25px;
+    margin-bottom: 75px;
+ }
+ 
+ /* Portada servicios */
+ 
+ .container-portada-servicios {
+    background: url('../img/portada4.jpg');
+    background-size: cover;
+    background-color: #4db6b1;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ }
+ 
+ .section-header-servicios {
+    padding: 50px 10px 50px 10px;
+    font-size: 70px !important;
+    color: white;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+ }
+ 
+ .subtitulo-portada-servicios {
+    font-size: 30px !important;
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+ }
+ 
+ /*Tarifas*/
+ .tarifas {
+    background-color: #eff0f1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 8px;
+ }
+ 
+ .tarjeta-tarifa {
+    margin: auto;
+    width: 100%;
+ }
+ 
+ .tarifa-lista {
+    margin-bottom: 16px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #d5d7da;
+ }
+ 
+ .ventajas {
+    margin-left: 15px;
+    margin-right: 15px;
+ }
+ 
+ .tarjeta-ventaja {
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+ }
+ 
+ /*Eventos-asistente*/
+ 
+ .container-portada-eventos {
+    background: url('../img/eventos-asistente.jpg');
+    background-size: cover;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ }
+ 
+ .section-header-eventos {
+    padding: 50px 10px 50px 10px;
+    font-size: 70px !important;
+    color: #6c757d;
+    margin: auto;
+    background-color: rgba(214, 214, 214, 0.6);
+    text-align: center;
+    width: 80%;
+ }
+ 
+ /*Proximos eventos*/
+ 
+ .btn-eventos {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #4db6b1;
+    color: white;
+ }
+ 
+ .btn-eventos:hover {
+    color: #4db6b1;
+    background-color: white;
+    border: 1px solid #4db6b1;
+ }
+ 
+ .fila-btn-eventos {
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ /*Eventos finalizados*/
+ 
+ 
+ 
+ 
+ 
+ /*Modal*/
+ .formulario-modal {
+    width: 100%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+ 
+ .btn-cancelar-modal {
+    padding: 15px 15px 15px 15px;
+    margin: auto;
+    background-color: #6c757d;
+    color: white;
+ }
+ 
+ .btn-cancelar-modal:hover {
+    color: #6c757d;
+    background-color: white;
+    border: 1px solid #6c757d;
+ }
+ 
+ /*Modal mensaje info*/
+ .parrafo-modal-info {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 24px;
+ }
+ 
+ /*Carousel*/
+ .carousel-control-prev {
+    margin-right: 10px !important;
+ }
+ 
+ .carousel-control-next {
+    margin-left: 10px !important;
+ }
+ 
+ .carousel-control-prev-icon {
+    background: url('../img/iconos/flecha-izq.png');
+    padding: 15px !important;
+    font-size: 10px !important;
+ }
+ .carousel-control-next-icon {
+    background: url('../img/iconos/flecha-dech.png');
+    padding: 15px !important;
+    font-size: 10px !important;
+ }
+ 
+ /*Perfil*/
+ /*Formulario datos contacto*/
+ 
+ 
+ 
+ 
+ .formulario-perfil {
+    padding-right: 5%;
+    padding-left: 10%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+ }
+ 
+ .btn-form-perfil {
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ select {
+    height: 42px !important;
+ }
+ 
+ /*Modal me apunto - Nº acompañantes*/
+ .add-one {
+    color: #4db6b1;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 10px;
+ }
+ 
+ .delete {
+    color: white;
+    background-color: #4db6b1;
+    text-align: center;
+    margin-top: 6px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+ 
+ #singlebutton {
+    width: 100%;
+    margin-top: 20px;
+ }
+ 
+ /*Formulario buscar*/
+ .formulario-buscar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+ }
+ 
+ /*Listado invitados*/
+ /*Datos globales*/
+ 
+ .tarjeta-datos {
+    margin: auto;
+    width: 80%;
+ }
+ 
+ /*Detalles evento organizador
+ .enlaces-navegacion-tabs{
+     font-weight: bold;
+     font-size: 16px;
+ }
+ 
+ .nav-link-tabs{
+     color: #4DB6B1 !important;
+ }
+ 
+ .nav-link-tabs:hover{
+     color: #6c757d !important;
+ }*/
+ 
+ .titulo-organizador {
+    color: #4db6b1;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: left;
+ }
+ 
+ .formulario-organizar-evento {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+ }
+ 
+ .card {
+    background-color: #eff0f1;
+    margin-bottom: 20px;
+    border-radius: 8px;
+ }
+ 
+ .icon-fixed-width {
+    width: 80px;
+    height: 50px;
+ }
+ @media screen and (max-width: 767px) {
+    .icon-fixed-width__mobile {
+       width: 40px;
+       height: 40px;
+    }
+ }
+ 
+ .wa-float {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:10px;
+    left:10px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    /*box-shadow: 2px 2px 3px #999;*/
+    box-shadow: 2px 2px 3px rgb(23, 23, 34);
+    z-index:3;
+ }
+ 
+ .wa-icon-margins {
+    margin-top:16px;
+ }
