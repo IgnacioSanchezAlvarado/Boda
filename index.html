@@ -38,7 +38,7 @@
 
     .fondo-pagina-personalizado {
             background-image: url('assets/Sitges_church2.jpeg');
-            background-size: 70%, 120%;
+            background-size: 50%, 120%;
             background-repeat: repeat-x;
             background-attachment: fixed;
             background-position: left center, right center;
@@ -69,6 +69,10 @@
         color: #5c5c5c !important;
         background-color: #ffffff !important;
     }
+
+    .estilo-enviar-personalizado {
+        font-family: Raleway !important;
+    }
     .viewEvent--heading__text {
     }
 </style>
@@ -97,8 +101,7 @@
          </button>
          <div class="collapse navbar-collapse" id="menuSuperior">
              <ul class="navbar-nav ml-auto text-lg-left menuSuperior--links">
-                     <li class="nav-item"><a class="nav-link" href="#localizaciones">Localizaciones</a></li>
-                     <li class="nav-item"><a class="nav-link" href="#horarios">Horarios</a></li>
+                     <li class="nav-item"><a class="nav-link" href="#localizaciones">Sitios</a></li>
                      <li class="nav-item"><a class="nav-link" href="#formulario">Formulario</a></li>
                      <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
              </ul>
@@ -197,11 +200,10 @@
                         <div>
                             <div class="row justify-content-center px-3 px-sm-0">
                                 <div class="extras-row w-100 px-lg-3">
-                                        <div id="accordion" class="float-left col-lg-4 px-0 px-lg-1">
                                             <div class="card blq-evento evento--visual estilo-bloques-personalizado">
-                                                <div class="card-header d-flex justify-content-between estilo-bloques-personalizado" id="headingBloque">
-                                                    <h5 class="mb-0 w-100">
-                                                        <button class="btn btn-link collapsed d-flex align-items-center w-100 estilo-bloques-personalizado" data-toggle="collapse" data-target="#asistencia" aria-expanded="false" aria-controls="asistencia">
+                                                <div class="card-header d-flex justify-content-between estilo-bloques-personalizado " id="headingBloque">
+                                                    <h5 class="mb-0 mx-auto">
+                                                        <button class="btn btn-link collapsed d-flex align-items-center estilo-bloques-personalizado mx-auto " data-toggle="collapse" data-target="#asistencia" aria-expanded="false" aria-controls="asistencia">
                                                             <i class="fas fa-clipboard-list mr-2"></i>Confirmar asistencia
                                                         </button>
                                                     </h5>
@@ -210,118 +212,17 @@
                                                     <div class="card-body">
                                                         <div class="row">
                                                             <div class="col-12 my-auto text-center">
-                                                                <div style="display:none;" id="apuntado-245--0" class="font-weight-bold rounded text-center">You are signed up.</div>
-                                                                <div  id="no-apuntado-245--0" class="font-weight-bold rounded text-center">You are not signed up.</div>
+                                                                <div  class="font-weight-bold rounded text-center">Rellena el siguiente formulario para confirmar tu asistencia al evento. Gracias.</div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="card-body py-0">
                                                     </div>
                                                     <div class="card-footer estilo-bloques-personalizado d-flex justify-content-center">
-                                                            <button type="button" title="Confirm invitation" class="btn btn--primary rsvp-button">Confirm invitation</button>
+                                                            <button type="button" class="btn btn--primary rsvp-button">Formulario</button>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="accordion" class="float-left col-lg-4 px-0 px-lg-1">
-                                            <div class="card blq-evento evento--visual estilo-bloques-personalizado">
-                                                <div class="card-header d-flex justify-content-between estilo-bloques-personalizado" id="headingBloque">
-                                                    <h5 class="mb-0 w-100">
-                                                        <button class="btn btn-link collapsed d-flex align-items-center w-100 estilo-bloques-personalizado" data-toggle="collapse" data-target="#intolerancias-y-otros" aria-expanded="false" aria-controls="asistencia">
-                                                            <i class="fas fa-allergies mr-2"></i>Alergias y restricciones alimenticias
-                                                        </button>
-                                                    </h5>
-                                                </div>
-                                                <div id="intolerancias-y-otros" class="collapse estilo-bloques-personalizado" aria-labelledby="headingBloque" data-parent="#accordion">
-                                                    <div class="card-body">
-                                                        <form id="cambiaPerfilIntoleranciasYOtros-form-245--0" novalidate="novalidate" onSubmit="return false;" >
-                                                            <div class="col px-0">
-                                                                <div class="row form-perfil">
-                                                                    <div class="form-row mx-auto w-100 px-3">
-                                                                        <div class="col-12">
-                                                                            <div class="col-12">
-                                                                                <p>Alergias</p>
-                                                                                <select id="alergico-" name="alergico" title="Tienes alguna alergia?" onchange="mostrarOcultarOtros(this.value)">
-                                                                                 <option value="0" >No tengo alergias</option>
-                                                                                 <option value="1" >Tengo alguna alergia</option>
-                                                                                 </select>
-                                                                                <div class="" id="alergiaDiv-">
-                                                                                  <select name="alergias[]" id="alergias" multiple onchange="mostrarOcultarOtros(this.value)">
-                                                                                    <optgroup label="Alimentos">
-                                                                                        <option value="Gluten" >Gluten</option>
-                                                                                        <option value="Marisco" >Marisco</option>
-                                                                                        <option value="Pescado" >Pescado</option>
-                                                                                        <option value="Frutos secos" >Frutos secos </option>
-                                                                                        <option value="otros">Otros</option>                    
-                                                                                    </optgroup>
-                                                                                 </select>
-                                                                                 <br>
-                                                                                <input type="text" name="otraAlergia" id="otraAlergia" style="display:none; width:100% ;" placeholder="Especifica otra alergia">
-                                                                                </div>
-                                                                            </div>                                                                                                                                                 
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <div class="card-body py-0">
-                                                    </div>
-                                                    <div class="card-footer estilo-bloques-personalizado d-flex justify-content-center">
-                                                            <span data-toggle="tooltip" title="Save"><button class="btn btn--primary my-1 mr-2 mr-md-0 rsvp-button">Save</button></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- <div id="accordion" class="float-left col-lg-4 px-0 px-lg-1">
-                                            <div class="card blq-evento evento--visual estilo-bloques-personalizado">
-                                                <div class="card-header d-flex justify-content-between estilo-bloques-personalizado" id="headingBloque">
-                                                    <h5 class="mb-0 w-100">
-                                                        <button class="btn btn-link collapsed d-flex align-items-center w-100 estilo-bloques-personalizado" data-toggle="collapse" data-target="#tallapie" aria-expanded="false" aria-controls="tallapie">
-                                                            <i class="fas fa-shoe-prints mr-2"></i>Shoe size
-                                                        </button>
-                                                    </h5>
-                                                </div>
-                                                <div id="tallapie" class="collapse estilo-bloques-personalizado" aria-labelledby="headingBloque" data-parent="#accordion">
-                                                    <div class="card-body">
-                                                        <form id="cambiaPerfilTallaPie-form-245--0" novalidate="novalidate" onSubmit="return false;" >
-                                                            <div class="col px-0">
-                                                                <div class="row form-perfil">
-                                                                    <div class="form-row mx-auto w-100 px-3">
-                                                                        <div class="col-12">
-                                                                            <div class="col-12">
-                                                                                <p>Shoe size</p>
-                                                                                <select name="tallapie" class="form-control-lg casilla-formulario">
-                                                                                    <option value="" >Undefined</option>
-                                                                                    <option value="35" >35</option>
-                                                                                    <option value="36" >36</option>
-                                                                                    <option value="37" >37</option>
-                                                                                    <option value="38" >38</option>
-                                                                                    <option value="39" >39</option>
-                                                                                    <option value="40" >40</option>
-                                                                                    <option value="41" >41</option>
-                                                                                    <option value="42" >42</option>
-                                                                                    <option value="43" >43</option>
-                                                                                    <option value="44" >44</option>
-                                                                                    <option value="45" >45</option>
-                                                                                    <option value="46" >46</option>
-                                                                                </select>
-                                                                            </div>
-                                                                            
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <div class="card-body py-0">
-                                                    </div>
-                                                    <div class="card-footer estilo-bloques-personalizado d-flex justify-content-center">
-                                                            <span data-toggle="tooltip" title="Save"><button class="btn btn--primary my-1 mr-2 mr-md-0 rsvp-button">Save</button></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
+                                                </div>                                          
+                                        </div>                                    
                                 </div>
                             </div>
                         </div>
@@ -331,14 +232,14 @@
         <section id="preferencias-evento" class="container my-1 py-1">
             <div id="viewEvent--content" class="container px-sm-0 ">
                     <div>
-                        <h3 class="my-3 text-center estilo-pagina-personalizado">Your preferences for this event</h3>
-                        <div>
-                                    <div class="row justify-content-center px-3 px-sm-0" id="acto-245-0">
-                                        <div class="extras-row w-100 px-lg-3">
-                                <div id="accordion" class="float-left col-lg-4 px-0 px-lg-1">
+                        <h3 class="my-3 text-center estilo-pagina-personalizado">Transporte</h3>
+                    <div>
+                    <div class="row justify-content-center px-3 px-sm-0 ">
+                            <div class="extras-row w-100 px-lg-3">
+                                <div id="accordion" class="float-left col-lg-6 px-0 px-lg-1">
                                     <div class="card blq-evento evento--visual estilo-bloques-personalizado">
-                                       <div class="card-header d-flex justify-content-between estilo-bloques-personalizado" id="headingBloque---245--0">
-                                         <h5 class="mb-0 w-100">
+                                       <div class="card-header d-flex justify-content-between estilo-bloques-personalizado">
+                                         <h5 class="mb-0  mx-auto">
                                            <button class="btn btn-link collapsed d-flex align-items-center w-100 estilo-bloques-personalizado" data-toggle="collapse" data-target="#idbloque-847-245--0" aria-expanded="false" aria-controls="idbloque-847-245--0">
                                                <i class="fas fa-bus mr-2"></i>
                                              Autobús de ida
@@ -349,32 +250,15 @@
                                        <div id="idbloque-847-245--0" class="collapse" aria-labelledby="headingBloque---245--0" data-parent="#accordion">
                                          <div class="card-body">
                                              <div class="col px-0" id="contenido"><p>Al terminar la ceremonia habrá autobuses para llevaros hasta la finca. Pendiente información de recogida de autobuses</p><div><br></div><div><strong><span style="text-decoration: underline; color: rgb(35, 111, 161);" data-mce-style="text-decoration: underline; color: rgb(35, 111, 161);"><a href="" data-mce-href="" style="color: rgb(35, 111, 161); text-decoration: underline;" data-mce-style="color: rgb(35, 111, 161); text-decoration: underline;">AQUÍ PODÉIS VER COMO LLEGAR DE LA IGLESIA A LOS AUTOBUSES</a></span></strong></div><div><br></div></div>
-                                                 <hr/>
-                                                 <div class="col">
-                                                                <div class="form-check-inline opcion-blq">
-                                                                    <input class="form-check-input rsvp-input" type="radio">
-                                                                    <label class="form-check-label">
-                                                                        Iré en autobús
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check-inline opcion-blq">
-                                                                    <input class="form-check-input rsvp-input" type="radio">
-                                                                    <label class="form-check-label">
-                                                                        No hace falta, iré en mi coche
-                                                                    </label>
-                                                                </div>
-                                                 </div>
-                                         </div>
-                                         <div class="card-footer estilo-bloques-personalizado d-flex justify-content-center">
-                                                    <span>Nothing selected.</span>
-                                         </div>
+                                             <hr/>
+                                            </div>
                                        </div>
                                      </div>
                                 </div>
-                                <div id="accordion" class="float-left col-lg-4 px-0 px-lg-1">
+                                <div id="accordion" class="float-right col-lg-6 px-0 px-lg-1">
                                     <div class="card blq-evento evento--visual estilo-bloques-personalizado">
                                        <div class="card-header d-flex justify-content-between estilo-bloques-personalizado" id="headingBloque---245--0">
-                                         <h5 class="mb-0 w-100">
+                                         <h5 class="mb-0 mx-auto">
                                            <button class="btn btn-link collapsed d-flex align-items-center w-100 estilo-bloques-personalizado" data-toggle="collapse" data-target="#idbloque-804-245--0" aria-expanded="false" aria-controls="idbloque-804-245--0">
                                                <i class="fas fa-bus mr-2"></i>
                                              Autobús de vuelta
@@ -384,106 +268,17 @@
                                        </div>
                                        <div id="idbloque-804-245--0" class="collapse" aria-labelledby="headingBloque---245--0" data-parent="#accordion">
                                          <div class="card-body">
-                                             <div class="col px-0" id="contenido"><p class="MsoNormal" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Cuando termine la fiesta los autobuses os llevarán de vuelta a Sitges, ¿necesitarás que te llevemos? (Los horarios son orientativos).</p><p class="MsoNormal" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;"><strong>Paradas</strong></span>: 
+                                             <div class="col px-0" id="contenido"><p class="MsoNormal" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">Cuando termine la fiesta los autobuses os llevarán de vuelta a Sitges. (Los horarios son orientativos).</p><p class="MsoNormal" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="text-decoration: underline;" data-mce-style="text-decoration: underline;"><strong>Paradas</strong></span>: 
                                                                     </p><ol><li class="MsoNormal" data-mce-style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;" style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><span style="background-color: rgb(255, 255, 255);" data-mce-style="background-color: rgb(255, 255, 255);">Pendiente</span></li>
                                                                             
                                                                     </ol><p></p></div>
                                                  <hr/>
-                                                 <div class="col">
-                                                                <div class="form-check-inline opcion-blq">
-                                                                    <input class="form-check-input rsvp-input" type="radio">
-                                                                    <label class="form-check-label">
-                                                                        No necesito autobús, iré en mi coche
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check-inline opcion-blq">
-                                                                    <input class="form-check-input rsvp-input" type="radio">
-                                                                    <label class="form-check-label">
-                                                                        Primera vuelta (pdte hora)
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check-inline opcion-blq">
-                                                                    <input class="form-check-input rsvp-input" type="radio">
-                                                                    <label class="form-check-label">
-                                                                        Segunda vuelta (pdte hora)
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check-inline opcion-blq">
-                                                                    <input class="form-check-input rsvp-input" type="radio">
-                                                                    <label class="form-check-label">
-                                                                        Tercera vuelta (pdte hora)
-                                                                    </label>
-                                                                </div>
-                                                 </div>
-                                         </div>
-                                         <div class="card-footer estilo-bloques-personalizado d-flex justify-content-center">
-                                                    <span>Nothing selected.</span>
                                          </div>
                                        </div>
                                      </div>
-                                </div>
-                                <!-- <div id="accordion" class="float-left col-lg-4 px-0 px-lg-1">
-                                    <div class="card blq-evento evento--visual estilo-bloques-personalizado">
-                                       <div class="card-header d-flex justify-content-between estilo-bloques-personalizado" id="headingBloque---245--0">
-                                         <h5 class="mb-0 w-100">
-                                           <button class="btn btn-link collapsed d-flex align-items-center w-100 estilo-bloques-personalizado" data-toggle="collapse" data-target="#idbloque-848-245--0" aria-expanded="false" aria-controls="idbloque-848-245--0">
-                                               <i class="fas fa-shoe-prints mr-2"></i>
-                                             Zapato plano
-                                             <span class="subtitulo"></span>
-                                           </button>
-                                         </h5>
-                                       </div>
-                                       <div id="idbloque-848-245--0" class="collapse" aria-labelledby="headingBloque---245--0" data-parent="#accordion">
-                                         <div class="card-body">
-                                             <div class="col px-0" id="contenido">Para que las chicas no dejéis de bailar, ¡pondremos zapato plano! Indícanos la talla que necesitas y así procuraremos que nadie se quede sin ellos.</div>
-                                                 <hr/>
-                                                 <div class="col">
-                                                                <div class="form-check-inline opcion-blq">
-                                                                    <input class="form-check-input rsvp-input" type="radio">
-                                                                    <label class="form-check-label">
-                                                                        36
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check-inline opcion-blq">
-                                                                    <input class="form-check-input rsvp-input" type="radio">
-                                                                    <label class="form-check-label">
-                                                                        37
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check-inline opcion-blq">
-                                                                    <input class="form-check-input rsvp-input" type="radio">
-                                                                    <label class="form-check-label">
-                                                                        38
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check-inline opcion-blq">
-                                                                    <input class="form-check-input rsvp-input" type="radio">
-                                                                    <label class="form-check-label">
-                                                                        39
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check-inline opcion-blq">
-                                                                    <input class="form-check-input rsvp-input" type="radio">
-                                                                    <label class="form-check-label">
-                                                                        40
-                                                                    </label>
-                                                                </div>
-                                                                <div class="form-check-inline opcion-blq">
-                                                                    <input class="form-check-input rsvp-input" type="radio">
-                                                                    <label class="form-check-label">
-                                                                        41
-                                                                    </label>
-                                                                </div>
-                                                 </div>
-                                         </div>
-                                         <div class="card-footer estilo-bloques-personalizado d-flex justify-content-center">
-                                                    <span>Nothing selected.</span>
-                                         </div>
-                                       </div>
-                                     </div>
-                                </div> -->
-                                        </div>
+                                </div>                   
                                     </div>
+                                </div>
                         </div>
                     </div>
             </div>
@@ -491,7 +286,7 @@
         <section id="informacion-evento" class="container my-1 py-1">
             <div id="viewEvent--content" class="container px-sm-0 ">
                     <div>
-                        <h3 class="my-3 text-center estilo-pagina-personalizado">Other useful information</h3>
+                        <h3 class="my-3 text-center estilo-pagina-personalizado">Información útil</h3>
                         <div>
                                 <div class="row justify-content-center px-3 px-sm-0" id="acto-245-0">
                                 <div class="extras-row w-100 px-lg-3">
@@ -499,7 +294,7 @@
                                 <div id="accordion" class="float-left col-lg-4 px-0 px-lg-1">
                                     <div class="card blq-evento evento--visual estilo-bloques-personalizado">
                                        <div class="card-header d-flex justify-content-between estilo-bloques-personalizado" id="headingBloque-----">
-                                         <h5 class="mb-0 w-100">
+                                         <h5 class="mb-0 mx-auto">
                                            <button class="btn btn-link collapsed d-flex align-items-center w-100 estilo-bloques-personalizado" data-toggle="collapse" data-target="#idbloque-808---" aria-expanded="false" aria-controls="idbloque-808---">
                                                <i class="fas fa-glass-cheers mr-2"></i>
                                              Qué ver y dónde comer
@@ -556,7 +351,7 @@
                                 <div id="accordion" class="float-left col-lg-4 px-0 px-lg-1">
                                     <div class="card blq-evento evento--visual estilo-bloques-personalizado">
                                        <div class="card-header d-flex justify-content-between estilo-bloques-personalizado" id="headingBloque-----">
-                                         <h5 class="mb-0 w-100">
+                                         <h5 class="mb-0 mx-auto">
                                            <button class="btn btn-link collapsed d-flex align-items-center w-100 estilo-bloques-personalizado" data-toggle="collapse" data-target="#idbloque-805---" aria-expanded="false" aria-controls="idbloque-805---">
                                                <i class="fas fa-bed mr-2"></i>
                                              Dónde hospedarse
@@ -601,7 +396,7 @@
                                 <div id="accordion" class="float-left col-lg-4 px-0 px-lg-1">
                                     <div class="card blq-evento evento--visual estilo-bloques-personalizado">
                                        <div class="card-header d-flex justify-content-between estilo-bloques-personalizado" id="headingBloque-----">
-                                         <h5 class="mb-0 w-100">
+                                         <h5 class="mb-0 mx-auto">
                                            <button class="btn btn-link collapsed d-flex align-items-center w-100 estilo-bloques-personalizado" data-toggle="collapse" data-target="#idbloque-806---" aria-expanded="false" aria-controls="idbloque-806---">
                                                <i class="fas fa-store mr-2"></i>
                                              Peluquerías y manicura
@@ -641,7 +436,7 @@
                                 <div id="accordion" class="float-left col-lg-4 px-0 px-lg-1">
                                     <div class="card blq-evento evento--visual estilo-bloques-personalizado">
                                        <div class="card-header d-flex justify-content-between estilo-bloques-personalizado" id="headingBloque-----">
-                                         <h5 class="mb-0 w-100">
+                                         <h5 class="mb-0 mx-auto">
                                            <button class="btn btn-link collapsed d-flex align-items-center w-100 estilo-bloques-personalizado" data-toggle="collapse" data-target="#idbloque-803---" aria-expanded="false" aria-controls="idbloque-803---">
                                                <i class="fas fa-gift mr-2"></i>
                                              Lista de bodas
@@ -668,7 +463,7 @@
                                 <div id="accordion" class="float-left col-lg-4 px-0 px-lg-1">
                                     <div class="card blq-evento evento--visual estilo-bloques-personalizado">
                                        <div class="card-header d-flex justify-content-between estilo-bloques-personalizado" id="headingBloque-----">
-                                         <h5 class="mb-0 w-100">
+                                         <h5 class="mb-0 mx-auto">
                                            <button class="btn btn-link collapsed d-flex align-items-center w-100 estilo-bloques-personalizado" data-toggle="collapse" data-target="#idbloque-812---" aria-expanded="false" aria-controls="idbloque-812---">
                                                <i class="fas fa-info-circle mr-2"></i>
                                              Otra información
@@ -690,7 +485,7 @@
                                 <div id="accordion" class="float-left col-lg-4 px-0 px-lg-1">
                                     <div class="card blq-evento evento--visual estilo-bloques-personalizado">
                                        <div class="card-header d-flex justify-content-between estilo-bloques-personalizado" id="headingBloque-----">
-                                         <h5 class="mb-0 w-100">
+                                         <h5 class="mb-0 mx-auto">
                                            <button class="btn btn-link collapsed d-flex align-items-center w-100 estilo-bloques-personalizado" data-toggle="collapse" data-target="#idbloque-809---" aria-expanded="false" aria-controls="idbloque-809---">
                                                <i class="fas fa-phone mr-2"></i>
                                              Contáctanos
@@ -711,24 +506,32 @@
                                 </div>
                                 </div>
                         </div>
-                    </div>
-            </div>
-        </section>
-        <section id="contacto" class="container my-1 py-1">
-            <div class="translucent p-3">
-                <h3 class="my-3 text-center estilo-pagina-personalizado">¡Déjanos un mensaje!</h3>
-                <div class="extras-row w-100">
-                    <form id="mensaje-para-los-organizadores" method="PUT" onSubmit="return false;">
-                        <div class="text-center">
-                            <input type="text" name="mensaje-para-los-organizadores__textarea--mensaje" maxlength="255" class="w-100 estilo-pagina-personalizado" value="">
+                    </section>
+                    <section id="contacto" class="container my-1 py-1">
+                        <div class="translucent p-3">
+                            <h3 class="my-3 text-center estilo-pagina-personalizado">Para cualquier otra consulta, !Déjanos un mensaje!</h3>
+                            <div class="container">
+                                <form target="_blank" action="https://formsubmit.co/nacho92sa@gmail.com" method="POST">
+                                  <div class="form-group">
+                                    <div class="form-row">
+                                      <div class="col">
+                                        <input type="text" name="name" class="form-control estilo-bloques-personalizado" placeholder="Nombre" required>
+                                      </div>
+                                      <div class="col">
+                                        <input type="email" name="email" class="form-control estilo-bloques-personalizado" placeholder="Correo electrónico" required>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <textarea placeholder="Tu mensaje" class="form-control estilo-bloques-personalizado" name="message" rows="2" required></textarea>
+                                  </div>
+                                  <button type="submit" class="btn btn-lg btn-dark btn-block estilo-enviar-personalizado">Enviar</button>
+                                </form>
+                              </div>
                         </div>
-                        <div class="m-2 text-center estilo-pagina-personalizado">
-                                <span data-toggle="tooltip" title="Save"><button class="btn btn--primary my-1 mr-2 mr-md-0 rsvp-button">Save</button></span>
-                        </div>
-                    </form>
+                    </section>
                 </div>
             </div>
-        </section>
     </div>
 </article>
 
