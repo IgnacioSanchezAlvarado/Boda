@@ -75,6 +75,27 @@
     }
     .viewEvent--heading__text {
     }
+
+    @media (max-width: 768px) {
+    .fondo-pagina-personalizado {
+        background-image: url('assets/Sitges_church2.jpeg');
+        background-size: cover;
+    }
+
+    .fondo-encabezado-personalizado {
+        background-image: url('assets/AnayNacho2.JPG');
+        background-origin: content-box;
+        height: calc(100vh - 125px);
+        width: 100vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        filter: grayscale(100%);  
+    }
+
+    /* Add more responsive styles as needed */
+}
+    
 </style>
 <!-- Metas de Open Graph Protocol con información para utilizar al compartir el evento -->
 <meta property="og:title" content="Ana &amp; Nacho">
@@ -88,8 +109,8 @@
  <body >
  <header id="header">
      <nav class="navbar navbar-expand-lg navbar-light justify-content-between p-md-4 w-100">
-          <a id="home-link" href="#">
-            <img src="assets/logo2.png" alt="Logo Ana y Nacho" width="200" height="70">
+          <a id="home-link" href="#" target="_self">
+            <img class="logo" src="assets/logo2.png" alt="Logo Ana y Nacho" width="200" height="70">
           </a>
          <button id="menuApp" class="navbar-toggler d-block d-lg-none mt-0" type="button" data-toggle="collapse"
                  data-target="#menuSuperior"
